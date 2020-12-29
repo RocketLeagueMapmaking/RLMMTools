@@ -7,6 +7,7 @@
 * PyQt5
 * fbs
 * PySide2
+* pyperclip
 
 ## To Run
 * Install fbs
