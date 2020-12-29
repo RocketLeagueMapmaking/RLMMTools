@@ -30,6 +30,7 @@ class Button_CopyBoostPad(QSAPushbutton):
         f.close()
         pyperclip.copy(text)
 
+
 class Button_CopyBoostPill(QSAPushbutton):
     def __init__(self, master=None, protocol=None):
         super().__init__(master=master,
@@ -40,6 +41,7 @@ class Button_CopyBoostPill(QSAPushbutton):
     def onClick(self):
         command = 'echo ' + "testing2" + '| clip'
         os.system(command)
+
 
 class Cluster_CopyBoost(QSAWidgetCluster):
     def __init__(self, master=None, protocol=None):

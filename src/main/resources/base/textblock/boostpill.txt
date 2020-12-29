@@ -1,0 +1,85 @@
+Begin Map
+   Begin Level
+      Begin Actor Class=StaticMeshActor Name=StaticMeshActor_122 Archetype=StaticMeshActor'Engine.Default__StaticMeshActor'
+         Begin Object Class=StaticMeshComponent Name=StaticMeshComponent0 ObjName=StaticMeshComponent_8 Archetype=StaticMeshComponent'Engine.Default__StaticMeshActor:StaticMeshComponent0'
+            StaticMesh=StaticMesh'BoostPad_Large'
+            VertexPositionVersionNumber=2
+            Materials(0)=Material'Park_P.pickup_boost.Materials.BoostPad_Mat'
+            ReplacementPrimitive=None
+            PreviewEnvironmentShadowing=201
+            bAllowApproximateOcclusion=True
+            bAcceptsDynamicDecals=False
+            bForceDirectLightMap=True
+            bUsePrecomputedShadows=True
+            BlockRigidBody=False
+            bDisableAllRigidBody=True
+            LightingChannels=(bInitialized=True,Static=True)
+            Rotation=(Pitch=0,Yaw=32768,Roll=0)
+            Name="StaticMeshComponent_8"
+            ObjectArchetype=StaticMeshComponent'Engine.Default__StaticMeshActor:StaticMeshComponent0'
+            CustomProperties
+         End Object
+         StaticMeshComponent=StaticMeshComponent'StaticMeshComponent_8'
+         Components(0)=StaticMeshComponent'StaticMeshComponent_8'
+         Location=(X=0.000000,Y=0.000000,Z=0.000000)
+         Rotation=(Pitch=0,Yaw=0,Roll=0)
+         DrawScale3D=(X=-1.000000,Y=1.000000,Z=1.000000)
+         Tag="Boost_Pill_Mesh"
+         CollisionComponent=StaticMeshComponent'StaticMeshComponent_8'
+         Name="StaticMeshActor_122"
+         ObjectArchetype=StaticMeshActor'Engine.Default__StaticMeshActor'
+      End Actor
+      Begin Actor Class=VehiclePickup_Boost_TA Name=VehiclePickup_Boost_TA_9 Archetype=VehiclePickup_Boost_TA'HoopsStadium_P.archetypes.vehiclepickup.VehiclePickup_BoostPill'
+         Begin Object Class=SpriteComponent Name=Sprite ObjName=SpriteComponent_74 Archetype=SpriteComponent'HoopsStadium_P.archetypes.vehiclepickup.VehiclePickup_BoostPill:Sprite'
+            Sprite=Texture2D'EditorResources.S_KVehFact'
+            SpriteCategoryName="VehiclePickupBoost"
+            ReplacementPrimitive=None
+            HiddenGame=True
+            AlwaysLoadOnClient=False
+            AlwaysLoadOnServer=False
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Scale=2.000000
+            Name="SpriteComponent_74"
+            ObjectArchetype=SpriteComponent'HoopsStadium_P.archetypes.vehiclepickup.VehiclePickup_BoostPill:Sprite'
+         End Object
+         BoostAmount=9999.000000
+         BoostType=BoostType_Pill
+         RespawnDelay=10.000000
+         FXActor=FXActor_TA'FXActor_TA_19'
+         Components(0)=SpriteComponent'SpriteComponent_74'
+         Location=(X=0.000000,Y=0.000000,Z=72.000000)
+         Rotation=(Pitch=0,Yaw=0,Roll=0)
+         Tag="Boost_Pill_Pickup"
+         Name="VehiclePickup_Boost_TA_9"
+         ObjectArchetype=VehiclePickup_Boost_TA'HoopsStadium_P.archetypes.vehiclepickup.VehiclePickup_BoostPill'
+      End Actor
+      Begin Actor Class=FXActor_TA Name=FXActor_TA_19 Archetype=FXActor_TA'Park_P.pickup_boost.BoostPill_FXActor'
+         Begin Object Class=ParameterDispenser_X Name=DefaultParameters ObjName=ParameterDispenser_X_8 Archetype=ParameterDispenser_X'Park_P.pickup_boost.BoostPill_FXActor:DefaultParameters'
+            Name="ParameterDispenser_X_8"
+            ObjectArchetype=ParameterDispenser_X'Park_P.pickup_boost.BoostPill_FXActor:DefaultParameters'
+         End Object
+         Begin Object Class=SpriteComponent Name=Sprite ObjName=SpriteComponent_39 Archetype=SpriteComponent'Park_P.pickup_boost.BoostPill_FXActor:Sprite'
+            Sprite=Texture2D'EditorResources.MatIcon_FX'
+            SpriteCategoryName="FXActor"
+            ReplacementPrimitive=None
+            HiddenGame=False
+            AlwaysLoadOnClient=False
+            AlwaysLoadOnServer=False
+            LightingChannels=(bInitialized=True,Dynamic=True)
+            Scale=2.000000
+            Name="SpriteComponent_39"
+            ObjectArchetype=SpriteComponent'Park_P.pickup_boost.BoostPill_FXActor:Sprite'
+         End Object
+         Parameters=ParameterDispenser_X'ParameterDispenser_X_8'
+         Components(0)=SpriteComponent'SpriteComponent_39'
+         Location=(X=0.000000,Y=0.000000,Z=0.000000)
+         Rotation=(Pitch=0,Yaw=0,Roll=0)
+         bNoDelete=True
+         Tag="Boost_Pill_FX"
+         Name="FXActor_TA_19"
+         ObjectArchetype=FXActor_TA'Park_P.pickup_boost.BoostPill_FXActor'
+      End Actor
+   End Level
+Begin Surface
+End Surface
+End Map
