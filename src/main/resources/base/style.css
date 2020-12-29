@@ -1,0 +1,40 @@
+.QLabel {font: 14pt Segoe UI;}
+.QDoubleSpinBox {font: 14pt Segoe UI;}
+.QPushButton {font: 14pt Segoe UI;}
+
+.QTabWidget {font: 14pt Segoe UI;}
+
+QSplashScreen {font: 14pt Segoe UI;}
+
+QTabWidget::pane { background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                               stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                               stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);}
+
+QToolTip {
+    background-color: white;
+    color: black;}
+
+QTabBar {font-size: 18pt;}
+
+QTabBar::tab:!selected {font: 12pt Segoe UI;
+                        color: #888888;
+                        background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                            stop: 0 #DDDDDD, stop: 0.6 #D2D2D2,
+                            stop: 0.7 #C8C8C8, stop: 1.0 #999999);
+                        /*border-top-right-radius: 4px;
+                        border-top-left-radius: 4px;*/
+                        border-bottom-color: #CCCCCC;
+                        margin-top: 2px;
+                        margin-left: 1px;
+                        margin-right: 1px;}
+
+QTabBar::tab:selected {font: 18pt Segoe UI;
+                      color: black;
+                      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #F6F6F6, stop: 0.7 #E8E8E8,
+                                        stop: 0.8 #E5E5E5, stop: 1.0 #E1E1E1);
+                      border-bottom-color: #E0E0E0;
+                      margin-top: 3px;
+                      margin-left: 1px;
+                      margin-right: 1px;
+                      }
